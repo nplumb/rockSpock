@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import spock from "./images/spock.svg";
+import spock from "./images/spock1.svg";
 import lizard from "./images/lizard.svg";
 import rock from "./images/rock.svg";
-import paper from "./images/paper.svg";
+import paper from "./images/Scroll-for-rejon2.svg";
 import scissors from "./images/Scissors.svg";
+import atomic from "./images/atomic.svg";
 import PropTypes from "prop-types";
 
 const PlayerImage = (props) => {
@@ -20,7 +21,9 @@ const PlayerImage = (props) => {
                     ? spock
                     : props.yourWeapon === "Lizard"
                     ? lizard
-                    : paper
+                    : props.yourWeapon === "Paper"
+                    ? paper
+                    : atomic
             }
             alt="rock paper scissor"
             width={250}
