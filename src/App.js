@@ -12,15 +12,16 @@ const App = () => {
         <Container id="top-container">
             <div className="BBTGame">
                 <div className="header">
-                    <b style={{ fontSize: 44 }}>
+                    <b style={{ fontSize: 40 }}>
                         Rock, Paper, Scissors, Lizard, Spock
                     </b>
                 </div>
                 <div className="body">
                     <div className="left">
                         <div className="top">
-                            <div />
-                            <b>Your Weapon Choice</b>
+                            <p>
+                                <b>Your Weapon</b>
+                            </p>
                         </div>
                         <div className="bottom">
                             <PlayerImage />
@@ -29,7 +30,9 @@ const App = () => {
 
                     <div className="right">
                         <div className="top">
-                            <b>Sheldon's Weapon</b>
+                            <p>
+                                <b>Sheldon's Weapon</b>
+                            </p>
                         </div>
                         <div className="bottom">
                             <SheldonImage />
